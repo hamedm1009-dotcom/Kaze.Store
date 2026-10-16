@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101310">
+  <meta name="description" content="KAZE - اكتشف أحدث الملابس الرجالي">
+  <title>KAZE | ملابس رجالي</title>
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./icons/icon-192.png">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="./index.html" aria-label="KAZE Home">KAZE<span>.</span></a>
+    <nav class="nav" aria-label="القائمة الرئيسية">
+      <a href="#home" data-i18n="home">الرئيسية</a>
+      <a href="#products" data-i18n="products">المنتجات</a>
+      <a href="#about" data-i18n="about">عن المتجر</a>
+    </nav>
+    <div class="header-actions">
+      <button id="languageBtn" class="icon-btn" type="button" aria-label="Change language">EN</button>
+      <button id="installBtn" class="install-btn" type="button" hidden data-i18n="install">ثبّت التطبيق</button>
+      <a class="cart-link" href="#products"><span data-i18n="cart">السلة</span> <span id="cartCount" class="cart-count">0</span></a>
+    </div>
+  </header>
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <p class="eyebrow" data-i18n="eyebrow">أسلوبك يبدأ من هنا</p>
+        <h1 data-i18n="heroTitle">البس بطريقتك. كن مختلفًا.</h1>
+        <p class="hero-description" data-i18n="heroText">اكتشف تشكيلة ملابس رجالي تجمع بين الراحة والأناقة.</p>
+        <a href="#products" class="primary-btn" data-i18n="shopNow">تسوق الآن ↙</a>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="art-circle"></div><div class="art-label">NEW<br>COLLECTION</div><span class="art-letter">K</span>
+      </div>
+    </section>
+    <section class="benefits" aria-label="مميزات المتجر">
+      <div><span>01</span><p data-i18n="benefit1">تصميم عصري</p></div>
+      <div><span>02</span><p data-i18n="benefit2">اختيارات متنوعة</p></div>
+      <div><span>03</span><p data-i18n="benefit3">الدفع عند الاستلام</p></div>
+    </section>
+    <section id="products" class="products-section">
+      <div class="section-heading"><div><p class="eyebrow" data-i18n="curated">اختياراتنا ليك</p><h2 data-i18n="featured">منتجات مميزة</h2></div><span class="section-note" data-i18n="preview">معاينة التصميم</span></div>
+      <div id="productGrid" class="product-grid">
+        <article class="product-card skeleton"><div class="product-image"></div><div class="product-info"><div class="skeleton-line"></div><div class="skeleton-line short"></div></div></article>
+        <article class="product-card skeleton"><div class="product-image"></div><div class="product-info"><div class="skeleton-line"></div><div class="skeleton-line short"></div></div></article>
+        <article class="product-card skeleton"><div class="product-image"></div><div class="product-info"><div class="skeleton-line"></div><div class="skeleton-line short"></div></div></article>
+        <article class="product-card skeleton"><div class="product-image"></div><div class="product-info"><div class="skeleton-line"></div><div class="skeleton-line short"></div></div></article>
+      </div>
+      <p id="storeMessage" class="store-message" role="status" data-i18n="loading">جاري تجهيز المتجر...</p>
+    </section>
+    <section id="about" class="about-section"><span class="about-mark">K.</span><div><p class="eyebrow" data-i18n="aboutLabel">عن KAZE</p><h2 data-i18n="aboutTitle">البس اللي يشبهك.</h2><p data-i18n="aboutText">تجربة تسوق بسيطة، واختيارات تناسب أسلوبك اليومي.</p></div></section>
+  </main>
+  <footer class="footer"><a class="logo" href="./index.html">KAZE<span>.</span></a><p>© <span id="year"></span> KAZE. All rights reserved.</p></footer>
+  <script type="module" src="./js/app.js"></script>
+</body>
+</html>
